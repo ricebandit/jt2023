@@ -17,9 +17,9 @@ export class Background extends Component {
     }
 
     componentDidMount(){
-        const param = useParam();
+        //const param = useParam();
 
-        console.log('Background, usePram', param);
+        //console.log('Background, usePram', param);
         
         this.showCover();
     }
