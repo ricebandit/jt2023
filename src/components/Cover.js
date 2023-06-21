@@ -31,7 +31,7 @@ export class Cover extends Component{
 
         return (
         <div id='cover' className={this.state.visible}>
-            <iframe src={'https://player.vimeo.com/video/' + video +'?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0&pip=0'} allow="autoplay; fullscreen;" allowFullScreen></iframe>
+            <iframe title={video} src={'https://player.vimeo.com/video/' + video +'?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0&pip=0'} allow="autoplay; fullscreen;" allowFullScreen></iframe>
             <div className="capabilities">
 
                 {capabilities.map( (skill, index) => <div className='item' key={skill + index}><p><small>{skill.skill}</small></p></div>)}

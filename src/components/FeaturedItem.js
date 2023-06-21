@@ -16,10 +16,10 @@ export class FeaturedItem extends Component {
     componentDidMount () {
 
         console.log('FeaturedItem', this.props.project);
-        const {featured_media} = this.props.project;
+        //const {featured_media} = this.props.project;
 
-        let project_data = {};
-        let feat_media_id = 0;
+        //let project_data = {};
+        //let feat_media_id = 0;
 
         const scope = this;
 
