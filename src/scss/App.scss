@@ -1,0 +1,35 @@
+$contentHeight: calc(100vh - 20px);
+$contentWidth: calc(100vw - 20px);
+
+$font-header:'Manrope', sans-serif;
+
+body{
+    background: gray;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing:0.02em;
+    overflow:hidden;
+
+    p,h1, h2, h3, h4,h5,h6,span,ul,li{
+        line-height:1.5;
+        margin:0;
+        padding:0;
+    }
+
+    #preload{
+        position:absolute;
+        transform:scale(0);
+        z-index:1;
+    }
+
+    .header{
+        line-height:1;
+    }
+}
+
+@import '_viewer';
+@import '_background';
+@import '_projectpage';
+@import '_menu';
+@import '_navigation';
+@import '_allprojects';
+@import '_cover';

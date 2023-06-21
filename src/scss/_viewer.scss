@@ -1,0 +1,11 @@
+#viewer{
+    .animatable{
+        transition:2000ms opacity;
+    }
+    .hide{
+        opacity:0;
+    }
+    .show{
+        opacity:1;
+    }
+}

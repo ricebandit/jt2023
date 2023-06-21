@@ -1,0 +1,80 @@
+#allProjects{
+    background: url(https://cms.jeremytani.com/wp-content/uploads/2023/06/dot-matrix-white.png);
+    height:$contentHeight;
+    left:10px;
+    position:fixed;
+    top:10px;
+    transform:translate3d(calc(100% + 20px), 0, 0);
+    transition:250ms transform 500ms;
+    width:$contentWidth;
+
+    &.visible{
+        transform:translate3d(0%, 0, 0);
+        transition:250ms transform;
+
+        .header{
+            .close-btn{
+
+                transform:scale(1);
+            }
+        }
+    }
+
+    .header{
+        margin-left:10px;
+        margin-top:10px;
+        padding:0;
+        position:relative;
+        width: calc(100% - 20px);
+
+        .title{
+            align-items:center;
+            background:white;
+            display:flex;
+            height:40px;
+            width:calc(100% - 44px);
+
+            h1{
+                font-size:18px;
+                margin:0 0 0 20px;
+                width:100%;
+            }
+        }
+
+        .close-btn{
+            aspect-ratio:1/1;
+            background:white;
+            cursor:pointer;
+            position:absolute;
+            right:0;
+            top:0;
+            transform:scale(0.85);
+            transition:500ms border-radius, 250ms transform;
+            width:40px;
+
+            &:hover{
+                border-radius: 0 50px 50px 0;
+            }
+
+            &:before,
+            &:after{
+                background:black;
+                content:'';
+                height:2px;
+                left:10px;
+                position:absolute;
+                top:50%;
+                width:20px;
+            }
+
+            &:before{
+                transform:translate3d(0, -50%, 0) rotate(45deg);
+            }
+
+            &:after{
+                transform:translate3d(0, -50%, 0) rotate(-45deg);
+            }
+        
+        }
+    }
+}

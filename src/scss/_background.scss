@@ -1,0 +1,44 @@
+#background{
+    height:100vh;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100vw;
+
+    .bg-img{
+        transition:500ms background-image;
+        filter:blur(12px);
+        height:100%;
+        left:0;
+        position:absolute;
+        top:0;
+        width:100%;
+    }
+
+    .dot-matrix{
+        background:url(https://cms.jeremytani.com/wp-content/uploads/2023/06/dot-matrix.png);
+        height:$contentHeight;
+        left:10px;
+        position:absolute;
+        top:10px;
+        width:$contentWidth;
+    }
+
+    .vignette{
+        box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+        height:100%;
+        left:0;
+        position:absolute;
+        top:0;
+        width:100%;
+    }
+
+    .border{
+        border:8px solid white;
+        height:calc(100% - 8px);
+        left:-4px;
+        position:absolute;
+        top:-4px;
+        width:calc(100% - 8px);
+    }
+}

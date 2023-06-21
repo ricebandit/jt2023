@@ -1,0 +1,31 @@
+#cover{
+    background: url(https://cms.jeremytani.com/wp-content/uploads/2023/06/dot-matrix-white-150.png) rgba(255,255,255, 0.2);
+    background-position: -50%;
+    height:$contentHeight;
+    left:10px;
+    position:absolute;
+    top:10px;
+    transform:translate3d(calc(100vw + 20px), 0, 0);
+    transition:500ms transform;
+    width:$contentWidth;
+
+    &.visible{
+        transform:translate3d(0, 0, 0);
+    }
+
+    .title{
+        font-family:$font-header;
+    }
+
+    .enterBtn{
+        cursor:pointer;
+    }
+
+    iframe{
+        aspect-ratio:16/9;
+        background:gray;
+        border:none;
+        max-width:500px;
+        width: calc(100% - 40px)
+    }
+}
